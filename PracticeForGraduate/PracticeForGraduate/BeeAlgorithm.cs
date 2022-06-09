@@ -6,23 +6,13 @@ using System.Text;
 
 namespace PracticeForGraduate
 {
-    class BeeAlgorithm
+    class BeeAlgorithm: Algorithm
     {
-        public int StepsForSearch { get; set; }
-        public int LengthOfSolution { get; set; }
 
         private Bee[] bees;
 
         private int countLoyalBees = 0;
 
-        private int[] _k_j;
-        private double[] _t_j;
-        private double[] _d_j;
-        private double[] _P_j;
-        public double A1 { get; set; }
-        public double A2 { get; set; }
-        public double R { get; set; }
-        private double _F;
 
         public BeeAlgorithm(int stepsForSearch, int lengthOfSolution, int countOfBees, int[] k_j, double[] t_j, double[] d_j,
             double[] P_j, double a1, double a2, double r, double F) 
@@ -33,8 +23,8 @@ namespace PracticeForGraduate
             {
                 bees[i] = new Bee();
             }
-            StepsForSearch = stepsForSearch;
-            LengthOfSolution = lengthOfSolution;
+            _countOfEra = stepsForSearch;
+            _lengthOfChromossome = lengthOfSolution;
             _k_j = k_j;
             _t_j = t_j;
             _d_j = d_j;
@@ -54,9 +44,9 @@ namespace PracticeForGraduate
         {
             for (int i = 0; i < bees.Length; i++)
             {
-                short[] BeeSolution = new short[LengthOfSolution];
+                short[] BeeSolution = new short[_lengthOfChromossome];
 
-                for (int j = 0; j < LengthOfSolution; j++)
+                for (int j = 0; j < _lengthOfChromossome; j++)
                 {
                     Random rnd = new Random();
                     BeeSolution[j] = ((short)rnd.Next(0,2));
@@ -68,9 +58,9 @@ namespace PracticeForGraduate
 
         private short[] GenerateRandomSolution()
         {
-            short[] BeeSolution = new short[LengthOfSolution];
+            short[] BeeSolution = new short[_lengthOfChromossome];
 
-            for (int j = 0; j < LengthOfSolution; j++)
+            for (int j = 0; j < _lengthOfChromossome; j++)
             {
                 Random rnd = new Random();
                 BeeSolution[j] = ((short)rnd.Next(0, 2));
@@ -79,9 +69,9 @@ namespace PracticeForGraduate
             return BeeSolution;
         }
 
-        public void Run()
+        public override void Run()
         {
-            while (StepsForSearch != 0)
+            while (_countOfEra != 0)
             {
                 for (int i = 0; i < bees.Length; i++)
                 {
@@ -100,10 +90,11 @@ namespace PracticeForGraduate
 
                 SetDirectionToBees();
 
-                DisplayResults();
-                Console.WriteLine("\n\n");
+                ////  Display cromossomes
+                //DisplayResults();
+                //Console.WriteLine("\n\n");
 
-                StepsForSearch--;
+                _countOfEra--;
             }
         }
 

@@ -4,24 +4,14 @@ using System.Text;
 
 namespace PracticeForGraduate
 {
-    class MemeticAlgorithm
+    class MemeticAlgorithm:Algorithm
     {
         private int _valueOfMutation;
-        private int _lengthOfChromossome;
         private List<short[]> _population;
         private int _countOfPopulation;
-        private int _countOfEra;
 
         public short[] BestSolution { get;private set; }
 
-        private int[] _k_j;
-        private double[] _d_j;
-        private double[] _t_j;
-        private double[] _P_j;
-        public double A1 { get; set; }
-        public double A2 { get; set; }
-        public double R { get; set; }
-        private double _F;
 
         public MemeticAlgorithm(int valutOfMutation, int lengthOfChrommossome, int countOfPopulation, int countOfEra,
             int[] k_j, double[] d_j, double[] t_j, double[] P_j, double a1, double a2, double r, double F)
@@ -67,7 +57,7 @@ namespace PracticeForGraduate
             BestSolution = _population[0];
         }
 
-        public void Run()
+        public override void Run()
         {
             int average = (int)(_countOfPopulation / 2);
 
@@ -108,15 +98,19 @@ namespace PracticeForGraduate
                         i++;
                     }
                 }
-
-                Mutation(_population[randomNumber]);
+                for (int j = 0; j < _valueOfMutation; j++)
+                {
+                    Mutation(_population[randomNumber]);
+                    randomNumber = rnd.Next(0, _population.Count);
+                }
+                
 
                 for (int j = 0; j < _population.Count; j++)
                 {
                     tbsearch.Run(_population[j], _k_j, _t_j, _d_j, _P_j, A1, A2, R, _F);
                 }
 
-                DisplayResults();
+                ///DisplayResults();
 
                 _countOfEra--;
             }

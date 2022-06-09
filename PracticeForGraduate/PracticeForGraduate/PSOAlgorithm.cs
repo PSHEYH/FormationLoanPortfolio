@@ -5,9 +5,8 @@ using System.Text;
 
 namespace PracticeForGraduate
 {
-    class PSOAlgorithm
+    class PSOAlgorithm: Algorithm
     {
-        private int _lengthOfChromossome;
         private List<short[]> _population;
         private List<short[]> _posibleVariants;
         private List<short[]> _V;
@@ -15,18 +14,9 @@ namespace PracticeForGraduate
         private short[] _G;
 
         private int _countOfPopulation;
-        private int _countOfEra;
 
         public short[] BestSolution { get;private set; }
 
-        private int[] _k_j;
-        private double[] _d_j;
-        private double[] _t_j;
-        private double[] _P_j;
-        public double A1 { get; set; }
-        public double A2 { get; set; }
-        public double R { get; set; }
-        private double _F;
 
         public PSOAlgorithm(int lengthOfChrommossome, int countOfPopulation, int countOfEra,
            int[] k_j, double[] d_j, double[] t_j, double[] P_j, double a1, double a2, double r, double F)
@@ -50,7 +40,7 @@ namespace PracticeForGraduate
 
         }
 
-        public void Run()
+        public override void Run()
         {
             GeneratePopulation();
             InitializeSpeed();
@@ -61,10 +51,15 @@ namespace PracticeForGraduate
                 {
                     Move(i);
                 }
+
+                Sort(_P);
+                _G = _P[0];
+
                 SetV();
                 SetX();
 
                 _P.Clear();
+
 
                 _countOfEra--;
             }
@@ -127,7 +122,7 @@ namespace PracticeForGraduate
 
         public void InitializeSpeed()
         {
-            for (int i = 0; i < _countOfPopulation; i++)
+            for (int i = 0; i < _population.Count; i++)
             {
                 _V.Add(InitializeOneSpeed());
             }
@@ -143,7 +138,7 @@ namespace PracticeForGraduate
 
         private void SetX()
         {
-            for (int i = 0; i < _countOfPopulation; i++)
+            for (int i = 0; i < _population.Count; i++)
             {
                 Sum(i, i);
             }
@@ -171,9 +166,9 @@ namespace PracticeForGraduate
             }
 
 
-            _P[xIndex] = GetBestPosibleVariant();
+            _P.Add(GetBestPosibleVariant());
             _posibleVariants.Clear();
-
+            
         }
 
         private short[] GetBestPosibleVariant()

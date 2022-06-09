@@ -38,7 +38,7 @@ namespace PracticeForGraduate
             a2 = 0.5;
             r = 0.1;
 
-            while (P(k_j, geneticAlgorithm.BestSolution, r, F) > e)
+            while (P(k_j, geneticAlgorithm.BestSolution, geneticAlgorithm.R, F) > e)
             {
                 geneticAlgorithm.R = 1.5 * geneticAlgorithm.R;
                 geneticAlgorithm.A1 = 1.5 * geneticAlgorithm.A1;
@@ -82,11 +82,11 @@ namespace PracticeForGraduate
 
             beeAlgorithm.Run();
 
-            while (P(k_j, beeAlgorithm.GetBestSolution(), r, F) > e)
+            while (P(k_j, beeAlgorithm.GetBestSolution(), beeAlgorithm.R, F) > e)
             {
-                beeAlgorithm.R = 1.5 * beeAlgorithm.R;
-                beeAlgorithm.A1 = 1.5 * beeAlgorithm.A1;
-                beeAlgorithm.A2 = 1.5 * beeAlgorithm.A2;
+                beeAlgorithm.R = 2.5 * beeAlgorithm.R;
+                beeAlgorithm.A1 = 2.5 * beeAlgorithm.A1;
+                beeAlgorithm.A2 = 2.5 * beeAlgorithm.A2;
 
                 beeAlgorithm.Run();
 
@@ -115,17 +115,19 @@ namespace PracticeForGraduate
             Console.WriteLine("  Задайте количество эпох: ");
             int eras = Convert.ToInt32(Console.ReadLine());
 
-            MemeticAlgorithm memeticAlgorithm = new MemeticAlgorithm(3, k_j.Length, countOfPopulationMemetic, eras, k_j, t_j, d_j, P_j, a1, a2, r, F);
-            Console.WriteLine("  Результат роботы: ");
-            var watchForMA = System.Diagnostics.Stopwatch.StartNew();
-            memeticAlgorithm.GeneratePopulation();
-
             a1 = 0.5;
             a2 = 0.5;
             r = 0.1;
 
-            while (P(k_j, memeticAlgorithm.BestSolution, r, F) > e)
+            MemeticAlgorithm memeticAlgorithm = new MemeticAlgorithm(3, k_j.Length, countOfPopulationMemetic, eras, k_j, t_j, d_j, P_j, a1, a2, r, F);
+            Console.WriteLine("  Результат роботы: ");
+            var watchForMA = System.Diagnostics.Stopwatch.StartNew();
+
+            memeticAlgorithm.Run();
+
+            while (P(k_j, memeticAlgorithm.BestSolution, memeticAlgorithm.R, F) > e)
             {
+                
                 memeticAlgorithm.R = 2.5 * memeticAlgorithm.R;
                 memeticAlgorithm.A1 = 2.5 * memeticAlgorithm.A1;
                 memeticAlgorithm.A2 = 2.5 * memeticAlgorithm.A2;
@@ -152,16 +154,16 @@ namespace PracticeForGraduate
             Console.WriteLine("  Задайте количество эпох: ");
             int erasPSO = Convert.ToInt32(Console.ReadLine());
 
-            PSOAlgorithm psoAlgorithm = new PSOAlgorithm(k_j.Length, countOfPopulationPSO, eras, k_j, t_j, d_j, P_j, a1, a2, r, F);
-            Console.WriteLine("  Результат роботы: ");
-            var watchForPSO = System.Diagnostics.Stopwatch.StartNew();
-            psoAlgorithm.GeneratePopulation();
-
             a1 = 0.5;
             a2 = 0.5;
             r = 0.1;
 
-            while (P(k_j, psoAlgorithm.BestSolution, r, F) > e)
+            PSOAlgorithm psoAlgorithm = new PSOAlgorithm(k_j.Length, countOfPopulationPSO, erasPSO, k_j, t_j, d_j, P_j, a1, a2, r, F);
+            Console.WriteLine("  Результат роботы: ");
+            var watchForPSO = System.Diagnostics.Stopwatch.StartNew();
+            psoAlgorithm.Run();
+
+            while (P(k_j, psoAlgorithm.BestSolution, psoAlgorithm.R, F) > e)
             {
                 psoAlgorithm.R = 2.5 * psoAlgorithm.R;
                 psoAlgorithm.A1 = 2.5 * psoAlgorithm.A1;
@@ -170,7 +172,7 @@ namespace PracticeForGraduate
                 psoAlgorithm.Run();
 
             }
-            psoAlgorithm.Run();
+            //psoAlgorithm.Run();
 
             watchForPSO.Stop();
             Console.Write(" Набор клиентов таков: ");

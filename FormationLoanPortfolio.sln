@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationLoanPortfolio", "FormationLoanPortfolio\FormationLoanPortfolio.csproj", "{BAE5565B-2853-42C7-A844-77BC75CC3300}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAE5565B-2853-42C7-A844-77BC75CC3300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE5565B-2853-42C7-A844-77BC75CC3300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE5565B-2853-42C7-A844-77BC75CC3300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE5565B-2853-42C7-A844-77BC75CC3300}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC7A3439-EB04-414E-9689-2B5644195DF3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\bin\Debug\FormationLoanPortfolio.exe.config
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\bin\Debug\FormationLoanPortfolio.exe
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\bin\Debug\FormationLoanPortfolio.pdb
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\obj\Debug\FormationLoanPortfolio.csproj.AssemblyReference.cache
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\obj\Debug\FormationLoanPortfolio.Form1.resources
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\obj\Debug\FormationLoanPortfolio.Properties.Resources.resources
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\obj\Debug\FormationLoanPortfolio.csproj.GenerateResource.cache
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\obj\Debug\FormationLoanPortfolio.csproj.CoreCompileInputs.cache
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\obj\Debug\FormationLoanPortfolio.exe
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\obj\Debug\FormationLoanPortfolio.pdb
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\bin\Debug\ExcelDataReader.dll
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\bin\Debug\ExcelDataReader.pdb
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\bin\Debug\ExcelDataReader.xml
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\MSI\source\repos\FormationLoanPortfolio\FormationLoanPortfolio\bin\Debug\ExcelDataReader.DataSet.xml

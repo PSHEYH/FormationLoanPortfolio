@@ -12,3 +12,17 @@ C:\Users\hp\source\repos\PracticeForGraduate\PracticeForGraduate\obj\Debug\netco
 C:\Users\hp\source\repos\PracticeForGraduate\PracticeForGraduate\obj\Debug\netcoreapp3.1\PracticeForGraduate.dll
 C:\Users\hp\source\repos\PracticeForGraduate\PracticeForGraduate\obj\Debug\netcoreapp3.1\PracticeForGraduate.pdb
 C:\Users\hp\source\repos\PracticeForGraduate\PracticeForGraduate\obj\Debug\netcoreapp3.1\PracticeForGraduate.genruntimeconfig.cache
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\bin\Debug\netcoreapp3.1\PracticeForGraduate.exe
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\bin\Debug\netcoreapp3.1\PracticeForGraduate.deps.json
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\bin\Debug\netcoreapp3.1\PracticeForGraduate.runtimeconfig.json
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\bin\Debug\netcoreapp3.1\PracticeForGraduate.runtimeconfig.dev.json
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\bin\Debug\netcoreapp3.1\PracticeForGraduate.dll
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\bin\Debug\netcoreapp3.1\PracticeForGraduate.pdb
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\obj\Debug\netcoreapp3.1\PracticeForGraduate.csproj.AssemblyReference.cache
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\obj\Debug\netcoreapp3.1\PracticeForGraduate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\obj\Debug\netcoreapp3.1\PracticeForGraduate.AssemblyInfoInputs.cache
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\obj\Debug\netcoreapp3.1\PracticeForGraduate.AssemblyInfo.cs
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\obj\Debug\netcoreapp3.1\PracticeForGraduate.csproj.CoreCompileInputs.cache
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\obj\Debug\netcoreapp3.1\PracticeForGraduate.dll
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\obj\Debug\netcoreapp3.1\PracticeForGraduate.pdb
+C:\Users\MSI\source\FormationLoanPortfolio\PracticeForGraduate\PracticeForGraduate\obj\Debug\netcoreapp3.1\PracticeForGraduate.genruntimeconfig.cache
